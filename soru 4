@@ -1,0 +1,41 @@
+liste = []
+liste2 =[]
+liste3 = []
+liste4 = []
+liste5 = []
+liste6 = []
+for x in range(100000, 10000001):
+    for n in str(x):
+        liste.append(int(n))
+    liste.sort()
+    
+        
+    for n in str(2*x):
+        liste2.append(int(n))
+    liste2.sort()
+
+    for n in str(3*x):
+        liste3.append(int(n))
+    liste3.sort()
+
+    for n in str(4*x):
+        liste4.append(int(n))
+    liste4.sort()
+
+    for n in str(5*x):
+        liste5.append(int(n))
+    liste5.sort()
+    
+    for n in str(6*x):
+        liste6.append(int(n))
+    liste6.sort()
+    
+    if liste == liste2 == liste3 == liste4 == liste5 :
+        print(x, " .. 2 katı ", 2*x, ".. 3 katı", 3*x, " .. 4 katı", 4*x, ".. 5 katı", 5*x, ".. 6 katı", 6*x)
+        
+    liste = []
+    liste2 =[]
+    liste3 =[]
+    liste4 =[]
+    liste5 =[]
+    liste6 =[]
